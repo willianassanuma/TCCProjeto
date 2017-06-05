@@ -5,14 +5,14 @@ public class CalculoDistancia {
 	public CalculoDistancia(Double fator) {
 		this.fator = fator;
 	}
-	public CalculoDistancia(){}
+
 	
     /**
      * @param distancia do objeto a camera
      * @param fE distancia do pixel esquerdo
      * @param fD distancia do pixel direito
      */
-	public void CalculoFator(Double distancia, Integer fE, Integer fD){
+	public void calculoFator(Double distancia, Integer fE, Integer fD){
 		fator = (fE - fD) * distancia;
 	}
     /**
